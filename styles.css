@@ -6,11 +6,8 @@
 img{
     width: 100%;
 }
-.nav-bar{
-    width: 90%;
-    height: 40px;
-    background-color: rgb(100, 100, 100);
-    border-spacing: 0;
+.w3-bar-item{
+    width: 250px;
 }
 .left-mini{
     display: grid;
@@ -44,7 +41,7 @@ img{
 }
 .upcoming-title{
     font-size: 64px;
-    font-weight: 900; 
+    font-weight: 600; 
 }
 .upcoming-details{
     font-size: 36px;
