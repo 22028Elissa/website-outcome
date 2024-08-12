@@ -17,28 +17,25 @@ img{
     grid-template-columns: 10% 90%;
     padding: 20px;
 }
-.left-mini-min{
+.left-mini-mini{
     font-size: 40px;
     font-weight: 200;
 }
 .arrowupdown{
     width: 60%
 }
-.description-word{
+.mini-description-word{
     font-size: 50px;
     margin: 40px 80px;
 }   
-
-.left-small{
+.upcoming-main-left-small{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
-
 }
-    
-.left-side{
+.upcoming-main-left-side{
     background-color: rgb(126, 126, 126);
 }
-.right-side{
-    background-color: rgb(177, 177, 177);
+.upcoming-main-right-side{
+    background-color: rgb(255, 255, 255);
 }
