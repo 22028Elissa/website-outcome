@@ -18,24 +18,39 @@ img{
     padding: 20px;
 }
 .left-mini-mini{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 200;
+    width:  60px
 }
 .arrowupdown{
     width: 60%
 }
 .mini-description-word{
     font-size: 50px;
-    margin: 40px 80px;
+    margin: 20px 40px;
 }   
 .upcoming-main-left-small{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+    margin: 20px;
 }
 .upcoming-main-left-side{
     background-color: rgb(126, 126, 126);
 }
 .upcoming-main-right-side{
+    margin: 10px;
     background-color: rgb(255, 255, 255);
+}
+.upcoming-title{
+    font-size: 64px;
+    font-weight: 900; 
+}
+.upcoming-details{
+    font-size: 36px;
+    line-height: 1;
+}
+.upcoming-info{
+    margin: 5px;
+    font-size: 30px;
 }
