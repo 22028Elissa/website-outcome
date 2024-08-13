@@ -3,6 +3,10 @@
     font-weight: 100;
     margin: 0;
 }
+.homepage1{
+    height: 1080px;
+    background-color: pink;
+}
 img{
     width: 100%;
 }
@@ -13,10 +17,12 @@ img{
 .w3-bar:hover{
     background-color: rgb(250, 250, 250);
 }
+
 .left-mini{
     display: grid;
     grid-template-columns: 10% 90%;
     padding: 20px;
+    margin: 20px 40px;
 }
 .left-mini-mini{
     font-size: 30px;
@@ -29,7 +35,7 @@ img{
 .mini-description-word{
     font-size: 50px;
     margin: 20px 40px;
-    font-weight: 100;
+    font-weight: 10;
 }   
 .upcoming-main-left-small{
     display: grid;
