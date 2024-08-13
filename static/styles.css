@@ -3,13 +3,6 @@
     font-weight: 100;
     margin: 0;
 }
-.homepage1{
-    height: 1080px;
-    background-color: pink;
-}
-img{
-    width: 100%;
-}
 .w3-bar-item{
     width: 250px;
     font-size: 30px;
@@ -17,6 +10,22 @@ img{
 .w3-bar:hover{
     background-color: rgb(250, 250, 250);
 }
+
+
+.homepage1{
+    height: 1080px;
+    background-color: pink;
+}
+.single-box{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+img{
+    width: 100%;
+}
+
 
 .left-mini{
     display: grid;
