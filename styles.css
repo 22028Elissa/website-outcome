@@ -8,6 +8,10 @@ img{
 }
 .w3-bar-item{
     width: 250px;
+    font-size: 30px;
+}
+.w3-bar:hover{
+    background-color: rgb(250, 250, 250);
 }
 .left-mini{
     display: grid;
@@ -25,6 +29,7 @@ img{
 .mini-description-word{
     font-size: 50px;
     margin: 20px 40px;
+    font-weight: 100;
 }   
 .upcoming-main-left-small{
     display: grid;
