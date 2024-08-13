@@ -11,15 +11,22 @@
     background-color: rgb(250, 250, 250);
 }
 
-
 .homepage1{
     height: 1080px;
-    background-color: pink;
+}
+.catchytext{
+    font-weight: 600;
+    font-display: italic;
+    font-size: 250px;
+}
+.bento {
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 .single-box{
     background-color: aqua;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    height: 100%;
 }
 
 img{
