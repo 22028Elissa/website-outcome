@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100;1,14..32,100&display=swap" rel="stylesheet">
@@ -11,13 +12,14 @@
     <title>Dance group</title>
 </head>
 <div class="w3-bar w3-gainsboro">
-<a href="upcoming.html" class="w3-bar-item w3-button " style="width:16%">upcoming</a>
-<a href="home.html" class="w3-bar-item w3-button w3-light-gray" style="width:16%">home</a>
-<a href="#" class="w3-bar-item w3-button" style="width:16%">previous</a>
-<a href="#" class="w3-bar-item w3-button " style="width:16%">profile</a>
-<a href="#" class="w3-bar-item w3-button" style="width:16%">interact</a>
-<a href="#" class="w3-bar-item w3-button" style="width:16%">contact</a>
-</div>
+    <a href="/" class="w3-bar-item w3-button " style="width:16%">home</a>
+    <a href="upcoming" class="w3-bar-item w3-button" style="width:16%">upcoming</a>
+    <a href="templates" class="w3-bar-item w3-button" style="width:16%">previous</a>
+    <a href="templates" class="w3-bar-item w3-button " style="width:16%">profile</a>
+    <a href="templates" class="w3-bar-item w3-button" style="width:16%">interact</a>
+    <a href="templates" class="w3-bar-item w3-button" style="width:16%">contact</a>
+  </div>
 <body>
+    {% block body %}
+    {% endblock %}
 </body>
-</html>
