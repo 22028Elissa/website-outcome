@@ -16,18 +16,20 @@ body{
 }
 .catchytext{
     font-weight: 600;
-    font-display: italic;
-    font-size: 250px;
+    font-style: oblique;
+    font-size: 150px;
     margin: 200px;
     padding: 0;
+    line-height: 30px;
+    letter-spacing: -1.1rem;
 }
 .bento {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 3fr 2fr;
 }
 .single-box{
-    background-color: aqua;
-    height: 100%;
+    height: 50px;
+    background-color: blue;
 }
 
 
