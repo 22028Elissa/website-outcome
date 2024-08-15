@@ -1,5 +1,5 @@
-*{
-    font-family: "Inter", sans-serif;
+body{
+    font-family: "Inter", sans-serif !important;
     font-weight: 100;
     margin: 0;
 }
@@ -18,9 +18,10 @@
     font-weight: 600;
     font-display: italic;
     font-size: 250px;
+    margin: 200px;
+    padding: 0;
 }
 .bento {
-    
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
@@ -28,6 +29,7 @@
     background-color: aqua;
     height: 100%;
 }
+
 
 img{
     width: 100%;
