@@ -96,3 +96,17 @@ img{
     font-weight: 200;
 
 }
+
+.lowerhero-contact{
+    padding: 20px 60px 200px 60px;
+    background-color: rgb(194, 194, 194);
+    text-align: center;
+}
+.talkthattalk{
+    font-size: 96px;
+    font-weight: 600px;
+}
+.descript-talkthattalk{
+    font-size: 40px;
+    font-weight: 100;
+}
