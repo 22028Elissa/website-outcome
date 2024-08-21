@@ -39,7 +39,7 @@ body{
 }
 .single-box{
     width: 100%;
-    background-color: blue;
+    background-color: rgb(202, 229, 255);
     border-radius: 5px;
 }
 
