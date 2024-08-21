@@ -110,3 +110,26 @@ img{
     font-size: 40px;
     font-weight: 100;
 }
+.two-column-contact{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
+.contact-box{
+    background-color: rgb(197, 197, 197);
+    padding: 30px;
+}
+.contactway{
+    font-weight: 600;
+    font-size: 64px;
+}
+.contactinfo{
+    font-weight: 500;
+    font-size: 40px;
+}
+.contactdescript{
+    font-weight: 300;
+    font-size: 36px;
+}
