@@ -94,9 +94,17 @@ img{
     margin: 5px;
     font-size: 30px;
     font-weight: 200;
-
 }
 
+.pageprevious{
+    margin: auto;
+}
+
+.proflongleft{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
 .lowerhero-contact{
     padding: 20px 60px 200px 60px;
     background-color: rgb(194, 194, 194);
