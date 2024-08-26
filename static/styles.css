@@ -99,17 +99,17 @@ img{
 .pageprevious{
     margin: auto;
 }
+
 /*profile*/
-.proflongleft{
+.two-column-profile{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
-    
+}
+.profilelongleft{
+    background-color: rgb(212, 212, 212);
 }
 
-.profilelongleft{
-background-color: aqua;
-}
 /*contact*/
 .lowerhero-contact{
     padding: 20px 60px 200px 60px;
