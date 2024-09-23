@@ -41,15 +41,16 @@ img{
 .catchytext{
     font-weight: 500;
     font-style: oblique;
-    font-size: 130px;
+    font-size: 5em;
     margin: 0 0 0 100px;
     padding: 0;
     line-height: 0;
-    letter-spacing: -1.1rem;
 }
 .and-catchytext{
     margin-left: 500px;
-    letter-spacing: -1.3rem;
+}
+.brilliance-catchytext{
+    margin-left: 600px;
 }
 .bento {
     display: grid;
@@ -57,9 +58,7 @@ img{
     gap: 20px;
     margin: 10px;
 }
-.brilliance-catchytext{
-    margin-left: 650px;
-}
+
 .single-box{
     width: 100%;
     background-color: rgb(202, 229, 255);
