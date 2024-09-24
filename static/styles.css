@@ -1,7 +1,7 @@
 /** GENERAL STUFFF**/
 
 body{
-    font-family: "Inter", sans-serif !important;
+    font-family: "Inter", sans-serif;
     font-weight: 100;
     margin: 0;
 }
@@ -27,11 +27,12 @@ img{
 
 /*NAV BAR*/
 .w3-bar-item{
-    width: 250px;
     font-size: 30px;
+    background-color: #ffdcf2;
 }
 .w3-bar:hover{
-    background-color: rgb(250, 250, 250);
+    color: #d07545;
+
 }
 /*Home*/
 .homepage1{
@@ -51,18 +52,6 @@ img{
 }
 .brilliance-catchytext{
     margin-left: 600px;
-}
-.bento {
-    display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
-    gap: 20px;
-    margin: 10px;
-}
-
-.single-box{
-    width: 100%;
-    background-color: rgb(202, 229, 255);
-    border-radius: 5px;
 }
 /*upcoming*/
 .left-mini{
@@ -92,10 +81,10 @@ img{
 }
 /*Events*/
 .upcoming-main-left-side{
-    background-color: rgb(126, 126, 126);
+    background-color: #D07545;
 }
 .upcoming-main-right-side{
-    background-color: rgb(255, 255, 255);
+    background-color: #C0E4D6;
 }
 .upcoming-title{
     margin-bottom: 10px;
@@ -118,7 +107,7 @@ img{
     margin: 1em;
 }
 .profilelongleft{
-    background-color: rgb(212, 212, 212);
+    background-color: #FFDCF2;
     padding: 1rem;
 }
 .two-column-profile-long-right{
@@ -127,15 +116,12 @@ img{
     gap: 1.5rem;
     margin: 1em;
 }
-.profilelongleft{
-    background-color: rgb(212, 212, 212);
-    padding: 1rem;
-}
 /*contact*/
 .lowerhero-contact{
     padding: 20px 60px 200px 60px;
-    background-color: rgb(194, 194, 194);
+    background-color: #04132A;
     text-align: center;
+    color: #FFDCF2;
 }
 .talkthattalk{
     font-size: 96px;
@@ -148,6 +134,7 @@ img{
     gap: 1.5em;
 }
 .contact-box{
-    background-color: rgb(197, 197, 197);
-    padding: 30px;
+    background-color: #FFDCF2;
+    padding: 0 2rem;
+    color:#04132A
 }

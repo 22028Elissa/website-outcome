@@ -12,9 +12,6 @@ def previous():
 @app.route('/profile')
 def profile():
    return render_template('profile.html')
-#@app.route('/interact')
-#def interact():
-#return render_template('interact.html')
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
