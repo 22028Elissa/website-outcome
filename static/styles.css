@@ -30,34 +30,36 @@ img{
     font-size: 30px;
     background-color: #ffdcf2;
 }
-.w3-bar:hover{
-    color: #d07545;
-
-}
 /*Home*/
 .homepage1{
-    height: 1080px;
+    height: 800px;
     background-image: url("/static/images/home-potential.jpg");
 }
 .catchytext{
-    font-weight: 500;
+    font-weight: 600x;
     font-style: oblique;
-    font-size: 5em;
-    margin: 0 0 0 100px;
+    font-size: 4em;
+    margin: 40px 0 0 2.5rem;
     padding: 0;
-    line-height: 0;
+    line-height: 0.7em;
+    letter-spacing: -0.09em;
+}
+.glamour-catchytext{
+    
 }
 .and-catchytext{
-    margin-left: 500px;
+    margin-left: 2em;
+    line-height: 0.3em;
 }
 .brilliance-catchytext{
-    margin-left: 600px;
+    margin-left: 2.59em;
+    line-height: 1em;
+    letter-spacing: -0.05em;
 }
 /*upcoming*/
 .left-mini{
     display: grid;
     grid-template-columns: 10% 90%;
-    padding: 20px;
     margin: 20px 40px;
 }
 .left-mini-mini{
@@ -107,7 +109,7 @@ img{
     margin: 1em;
 }
 .profilelongleft{
-    background-color: #FFDCF2;
+    background-color: #f5edf2;
     padding: 1rem;
 }
 .two-column-profile-long-right{
