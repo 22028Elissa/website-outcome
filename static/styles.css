@@ -83,10 +83,10 @@ img{
 }
 /*Events*/
 .upcoming-main-left-side{
-    background-color: #D07545;
 }
 .upcoming-main-right-side{
     background-color: #C0E4D6;
+    padding: 1em;
 }
 .upcoming-title{
     margin-bottom: 10px;
