@@ -1,8 +1,15 @@
 from flask import Flask, render_template
+import sqlite3
+
+DATABASE = "Events.db"
+
 app = Flask(__name__)
+
 @app.route('/')
 def home():
-    return render_template('home.html')
+    title = "SELECT Title FROM Event;"
+    return render_template('home.html', title=title)
+
 @app.route('/upcoming')
 def upcoming():
     return render_template('upcoming.html')
