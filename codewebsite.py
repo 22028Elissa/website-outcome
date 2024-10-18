@@ -14,7 +14,7 @@ def upcoming():
     db = sqlite3.connect(DATABASE)
     cursor = db.cursor()
 
-    sql = "SELECT * FROM Event;"
+    sql = "SELECT * FROM Event WHERE Status ='u';"
 
     cursor.execute(sql)
 
@@ -29,7 +29,7 @@ def previous():
     db = sqlite3.connect(DATABASE)
     cursor = db.cursor()
 
-    sql = "SELECT * FROM Event;"
+    sql = "SELECT * FROM Event WHERE Status ='p';"
 
     cursor.execute(sql)
 
