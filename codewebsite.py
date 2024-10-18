@@ -7,15 +7,38 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    title = "SELECT Title FROM Event;"
-    return render_template('home.html', title=title)
+    return render_template('home.html')
 
 @app.route('/upcoming')
 def upcoming():
-    return render_template('upcoming.html')
+    db = sqlite3.connect(DATABASE)
+    cursor = db.cursor()
+
+    sql = "SELECT * FROM Event;"
+
+    cursor.execute(sql)
+
+    title = cursor.fetchall()
+
+    db.close()
+    print(title)
+    return render_template('upcoming.html', title=title)
+
 @app.route('/previous')
 def previous():
-    return render_template('previous.html')
+    db = sqlite3.connect(DATABASE)
+    cursor = db.cursor()
+
+    sql = "SELECT * FROM Event;"
+
+    cursor.execute(sql)
+
+    title = cursor.fetchall()
+
+    db.close()
+    print(title)
+    return render_template('previous.html', title=title)
+
 @app.route('/profile')
 def profile():
    return render_template('profile.html')

@@ -1,26 +1,29 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-
-    <section class="left-mini">
+<section class="left-mini">
     <div class="left-mini-mini">
-        <p>soon</p>
-        <img class="arrowupdown" src="/static/images/Updownarrow.png" alt="arrow that goes and and arrow that goes down">
-        <p>further</p>
+        <p>latest</p>
+        <img class="arrowupdown" src="/static/images/Updownarrow.png" alt="arrow that goes up and arrow that goes down">
+        <p>oldest</p>
     </div>
     <div class="description">
-        <h5 class="mini-description-word">Below are descriptions of events we’re performing at</h5>
+        <h5 class="mini-description-word">Below are descriptions of events we performed at</h5>
     </div>
     </section>
+    <!-- Section -->
+    {% for item in title %}
     <section class="upcoming-main-left-small">
         <div class="upcoming-main-left-side">
-            <img src="/static/images/baemonlogo.png" alt="babymonster logo">
+            <img src="/static/images/{{ item[7] }}" alt="{{ item[8] }}">
         </div>
         <div class="upcoming-main-right-side">
-            <h1 class="upcoming-title">Korea Day</h1>
-            <h3 class="upcoming-details"><strong>Date:</strong> 30th November <br><strong>Address:</strong> victoria square
-                <br><strong>Song:</strong> 3 Solo dances and Babymonster 2ne1 mashup/</h3>
-            <p class="upcoming-info"><strong>Info:</strong>Elissa, Tram, Jael, Isha, Joowon</p>
+            <h1 class="upcoming-title">{{ item[0] }}</h1>
+            <h3 class="upcoming-details"><strong>Date:</strong> {{ item[2] }} {{ item[6] }}<br><strong>Address:</strong> {{ item[3] }}
+                <br><strong>Song:</strong> {{ item[4] }}</h3>
+            <p class="upcoming-info"><strong>Info:</strong> {{ item[5] }}</p>
         </div>
     </section>
+    {% endfor %}
+
 {% endblock %}
