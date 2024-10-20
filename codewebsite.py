@@ -42,6 +42,9 @@ def previous():
 @app.route('/profile')
 def profile():
    return render_template('profile.html')
+@app.route('/outfits')
+def outfits():
+   return render_template('outfits.html')
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
