@@ -118,6 +118,36 @@ img{
     gap: 1.5rem;
     margin: 1em;
 }
+/* outfits */
+.outfits input[type="radio"] { display: none; }
+.outfits figure {
+  visibility: hidden; opacity: 0;
+  transition: all 0.5s;
+}
+.outfits input[type="radio"]:checked + figure {
+  visibility: visible; opacity: 1;
+}
+.outfits {
+    position: relative;
+    max-width: 600px; height: 400px;
+  }
+  .outfits img{
+    position: absolute;
+  }
+  /* (PART C) SLIDE IMAGES */
+  .outfits img {
+    top: 0; left: 0;
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  /* (PART E) LAST & NEXT BUTTONS */
+  .outfits label {
+    top: 50%; transform: translateY(-50%); 
+    display: flex; align-items: center; justify-content: center;
+    width: 50px; height: 50px; border-radius: 50%;
+    font-size: 1.5em; cursor: pointer;
+  }
+  .outfits label.last { left: 10px; }
+  .outfits label.next { right: 10px; }
 /*contact*/
 .lowerhero-contact{
     padding: 20px 60px 200px 60px;
