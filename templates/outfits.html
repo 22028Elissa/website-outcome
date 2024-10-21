@@ -14,15 +14,15 @@
         <img src="/static/images/anna teddy.jpg">
         <label for="slide2" class="next">&#9654;</label>
         </figure>
-    
+        {% for item in clothes %}
         <!-- (A2) SLIDE 2 -->
         <input type="radio" name="slides" id="slide2">
         <figure>
-        <img src="/static/images/baemonlogo.png">
+        <img src="/static/images/outfits {{ item[1] }}" alt="{{ item[3] }}">
         <label for="slide1" class="last">&#9664;</label>
         <label for="slide3" class="next">&#9654;</label>
         </figure>
-    
+        {% endfor %}
         <!-- (A3) SLIDE 3 -->
         <input type="radio" name="slides" id="slide3">
         <figure>

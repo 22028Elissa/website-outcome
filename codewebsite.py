@@ -42,9 +42,22 @@ def previous():
 @app.route('/profile')
 def profile():
    return render_template('profile.html')
+
 @app.route('/outfits')
 def outfits():
-   return render_template('outfits.html')
+    db = sqlite3.connect(DATABASE)
+    cursor = db.cursor()
+
+    sql = "SELECT * FROM outfit;"
+
+    cursor.execute(sql)
+
+    clothes = cursor.fetchall()
+
+    db.close()
+    print(clothes)
+    return render_template('outfits.html', clothes=clothes)
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
