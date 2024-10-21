@@ -1,25 +1,35 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<div class="outfits">
-    <!--- Slide 1-->
-    <input type="radio" name="outfits" id="slide1" checked>
-    <figure>
-        <img src="/static/images/anna teddy.jpg" alt="">
+<section class="outfitsinfo">
+    <h1>Become our personal stylists</h1>  
+</section>
+
+<!-- (PART A) SLIDES -->
+<section class="outfits-top">
+    <div class="slides">
+        <!-- (A1) SLIDE 1 -->
+        <input type="radio" name="slides" id="slide1" checked>
+        <figure>
+        <img src="/static/images/anna teddy.jpg">
         <label for="slide2" class="next">&#9654;</label>
-    </figure>
-    <!-- slide 2 -->
-    <input type="radio" name="outfits" id="slide2" checked>
-    <figure>
-        <img src="/static/images/baemonlogo.png" alt="">
+        </figure>
+    
+        <!-- (A2) SLIDE 2 -->
+        <input type="radio" name="slides" id="slide2">
+        <figure>
+        <img src="/static/images/baemonlogo.png">
         <label for="slide1" class="last">&#9664;</label>
         <label for="slide3" class="next">&#9654;</label>
-    </figure>
-    <!-- slide 3 -->
-    <input type="radio" name="outfits" id="slide3" checked>
-    <figure>
-        <img src="/static/images/celinecat.png" alt="">
+        </figure>
+    
+        <!-- (A3) SLIDE 3 -->
+        <input type="radio" name="slides" id="slide3">
+        <figure>
+        <img src="/static/images/celinecat.png">
         <label for="slide2" class="last">&#9664;</label>
-    </figure>
-</div>
+        </figure>
+    </div>
+</section>
+<h3>Screenshot and email to 22028@burnside.school.nz for a chance to win!</h3>
 {% endblock %}
