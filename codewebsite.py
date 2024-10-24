@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import sqlite3
+import random
 
 DATABASE = "Events.db"
 
@@ -45,18 +46,32 @@ def profile():
 
 @app.route('/outfits')
 def outfits():
+    top = random.randint(1, 22)
+    print(top)
+    bottom = random.randint(23, 43)
     db = sqlite3.connect(DATABASE)
     cursor = db.cursor()
 
-    sql = "SELECT * FROM outfit;"
+    sql = "SELECT link FROM outfit WHERE id = ? ;"
 
-    cursor.execute(sql)
+    cursor.execute(sql,(top,))
 
-    clothes = cursor.fetchall()
+    tops = cursor.fetchone()
 
     db.close()
-    print(clothes)
-    return render_template('outfits.html', clothes=clothes)
+    print(tops)
+    db = sqlite3.connect(DATABASE)
+    cursor = db.cursor()
+
+    sql = "SELECT link FROM outfit WHERE id = ? ;"
+
+    cursor.execute(sql,(bottom,))
+
+    bottoms = cursor.fetchone()
+
+    db.close()
+    print(bottoms)
+    return render_template('outfits.html', tops=tops, bottoms=bottoms)
 
 @app.route('/contact')
 def contact():
