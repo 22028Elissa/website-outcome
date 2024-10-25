@@ -128,7 +128,8 @@ img{
 }
 /* outfits */
 .outfits{
-   width: 50%;
+   margin: auto;
+    width: 20%;
 }
 /*contact*/
 .lowerhero-contact{
